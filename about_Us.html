@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <title>About Us</title>
     <style>
-        td {text-align: center; height: 68px;}
-        th {width: 8.3%;}
+        td {
+            text-align: center; 
+            height: 68px;
+            border-style: solid;
+            
+        }
+        
+        th {
+            width: 8.3%;
+            border-style: solid;
+        }
+        
+        table {
+            border-style: solid;
+            border-bottom-style: solid;
+            border-collapse: collapse;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
     </style>
 </head>
 <body>
@@ -14,12 +66,14 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="photo_Gallery.html">Photo Gallery</a></li>
-            <li><a href="about_Us.html">About Us</a></li>
-            <li><a href="comment.html">Comment</a></li>
+            <li><a class="active" href="about_Us.html">About Us</a></li>
         </ul>
     </nav>
     
-    <table border="1" width="100%">
+    <br>
+    <h1>About Us</h1>
+    <h3>My Timetable</h3>
+    <table width="100%">
         <tr>
             <th style="height: 20px;"></th>
             <th>8:00 am</th>
