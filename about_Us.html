@@ -5,29 +5,29 @@
     <title>About Us</title>
     <style>
         td {
-            text-align: center; 
+            text-align: center;
             height: 68px;
             border-style: solid;
-            
+
         }
-        
+
         th {
             width: 8.3%;
             border-style: solid;
         }
-        
+
         table {
             border-style: solid;
             border-bottom-style: solid;
             border-collapse: collapse;
         }
-        
+
         * {
             box-sizing: border-box;
         }
 
         body {
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 10px;
             background: #f1f1f1;
         }
@@ -59,8 +59,82 @@
         .active {
             background-color: #04AA6D;
         }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Image */
+        .img {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
     </style>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -69,63 +143,117 @@
             <li><a class="active" href="about_Us.html">About Us</a></li>
         </ul>
     </nav>
-    
-    <br>
     <h1>About Us</h1>
-    <h3>My Timetable</h3>
-    <table width="100%">
-        <tr>
-            <th style="height: 20px;"></th>
-            <th>8:00 am</th>
-            <th>9:00 am</th>
-            <th>10:00 am</th>
-            <th>11:00 am</th>
-            <th>12:00 pm</th>
-            <th>1:00 pm</th>
-            <th>2:00 pm</th>
-            <th>3:00 pm</th>
-            <th>4:00 pm</th>
-            <th>5:00 pm</th>
-            <th>6:00 pm</th>
-        </tr>
-        <tr>
-            <th>Sundays</th>
-            <td colspan="2"><b>CSC508</b><br>8:00am-9:50am</td>
-            <td colspan="2"><b>CSC569</b><br>10:15am-12:05am</td>
-            <td><b>CTU554</b><br>12:15pm-1:05am</td>
-            <td colspan="6"></td>
-        </tr>
-        <tr>
-           <th>Mondays</th> 
-           <td colspan="2"><b>CSC577</b><br>8:00am-9:50am</td>
-           <td colspan="2"><b>CSC574</b><br>10:15am-12:05am</td>
-           <td colspan="2"><b>CSC584</b><br>12:15am-2:05am</td>
-           <td colspan="5"></td>
-        </tr>
-        <tr>
-           <th>Tuesday</th> 
-           <td colspan="2"><b>CSC569</b><br>8:00am-9:50am</td>
-           <td colspan="2"></td>
-           <td colspan="2"><b>ELC650</b><br>12:15pm-2:05pm</td>
-           <td colspan="2"><b>CSC508</b><br>2:30pm-4:20pm</td>
-           <td colspan="2"><b>CSC577</b><br>4:30pm-6:20pm</td>
-           <td></td>
-        </tr>
-        <tr>
-            <th>Wednesday</th>
-            <td colspan="2"></td>
-            <td colspan="2"><b>CSC577</b><br>10:15am-12:05pm</td>
-            <td><b>CTU554</b><br>12:15pm-1:05pm</td>
-            <td colspan="6"></td>
-        </tr>
-        <tr>
-            <th>Thursday</th>
-            <td colspan="2"></td>
-            <td colspan="2"><b>TMC451</b><br>10:15am-12:05pm</td>
-            <td colspan="2"></td>
-            <td colspan="2"><b>CSC584</b><br>2:30am-4:20am</td>
-            <td colspan="3"></td>
-        </tr>
-    </table>
-</body>
-</html>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                
+                <h3>My Timetable</h3>
+                <table>
+                    <tr>
+                        <th style="height: 20px;"></th>
+                        <th>8:00 am</th>
+                        <th>9:00 am</th>
+                        <th>10:00 am</th>
+                        <th>11:00 am</th>
+                        <th>12:00 pm</th>
+                        <th>1:00 pm</th>
+                        <th>2:00 pm</th>
+                        <th>3:00 pm</th>
+                        <th>4:00 pm</th>
+                        <th>5:00 pm</th>
+                        <th>6:00 pm</th>
+                    </tr>
+                    <tr>
+                        <th>Sundays</th>
+                        <td colspan="2"><b>CSC508</b><br>8:00am-9:50am</td>
+                        <td colspan="2"><b>CSC569</b><br>10:15am-12:05am</td>
+                        <td><b>CTU554</b><br>12:15pm-1:05am</td>
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th>Mondays</th>
+                        <td colspan="2"><b>CSC577</b><br>8:00am-9:50am</td>
+                        <td colspan="2"><b>CSC574</b><br>10:15am-12:05am</td>
+                        <td colspan="2"><b>CSC584</b><br>12:15am-2:05am</td>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td colspan="2"><b>CSC569</b><br>8:00am-9:50am</td>
+                        <td colspan="2"></td>
+                        <td colspan="2"><b>ELC650</b><br>12:15pm-2:05pm</td>
+                        <td colspan="2"><b>CSC508</b><br>2:30pm-4:20pm</td>
+                        <td colspan="2"><b>CSC577</b><br>4:30pm-6:20pm</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td colspan="2"></td>
+                        <td colspan="2"><b>CSC577</b><br>10:15am-12:05pm</td>
+                        <td><b>CTU554</b><br>12:15pm-1:05pm</td>
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td colspan="2"></td>
+                        <td colspan="2"><b>TMC451</b><br>10:15am-12:05pm</td>
+                        <td colspan="2"></td>
+                        <td colspan="2"><b>CSC584</b><br>2:30am-4:20am</td>
+                        <td colspan="3"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card">
+                <p>This is my current academic information regarding course timetable and my goals for this semester</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+               <h3>Expected Grades For This Semester</h3>
+                <table>
+                    <tr>
+                        <th>Course</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td style="height: 10px">CSC508</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>CSC569</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>CSC574</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>CSC577</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>CSC584</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>CTU554</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>ELC650</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>TMC451</td>
+                        <td>A</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        footer
+    </div>
+</body></html>

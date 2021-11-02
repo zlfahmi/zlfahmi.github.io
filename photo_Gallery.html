@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Photo Gallery</title>
@@ -9,11 +10,11 @@
         }
 
         body {
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 10px;
             background: #f1f1f1;
         }
-        
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -41,32 +42,138 @@
         .active {
             background-color: #04AA6D;
         }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Create three unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        /* Left and right column */
+        .column.side {
+            width: 10%;
+        }
+
+        /* Middle column */
+        .column.middle {
+            width: 80%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column.side,
+            .column.middle {
+                width: 100%;
+            }
+        }
+
+        /* Image */
+        .img {
+            background-color: #aaa;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <nav>
+    <div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="photo_Gallery.html">Photo Gallery</a></li>
             <li><a href="about_Us.html">About Us</a></li>
         </ul>
-    </nav>
-    
-    <h1>Galeri Gambar Makanan</h1>
-    
-    <img height="50" width="50" src="image/makanan1.webp" alt="Nasi lemak">
-    <p>Nasi Lemak merupakan hidangan makanan Melayu. Ia diperbuat dari beras yang dimasak dengan santan kelapa, bawang merah, halia dan juga daun pandan. Nasi Lemak juga dikenali sebagai juadah kebangsaan Malaysia dan boleh di setiap pelosok Malaysia.</p>
-    
-    <img height="50" width="50" src="image/makanan2.webp" alt="Asam laksa">
-    <p>Asam Laksa merupakan hidangan tradisi masyarakat Baba dan Nyonya. Hidangan ini merupakan mee beras yang disajikan bersama kuah ikan pedas. Keturunan Baba dan Nyonya ini pada asalnya merupakan imigran Cina yang datang ke Tanah Melayu. Mereka ini telah menggabungkan budaya Melayu yang diterapkan dalam kehidupan seharian.</p>
-    
-    <img height="50" width="50" src="image/makanan3.webp" alt="Roti canai">
-    <p>Roti Canai merupakan roti leper yang diperkenalkan oleh masyarakat India. Ia boleh didapati di kebanyakan restoran mamak dan restoran Melayu di Malaysia.</p>
-    
-    <img height="50" width="50" src="image/makanan4.webp" alt="Cendol">
-    <p>Cendol adalah pencuci mulut yang berasal dari Indonesia, namun begitu popular di Malaysia. Ia diperbuat dari santan kelapa, jeli hijau yang diperbuat daripada tepung beras serta berwarna hijau, ais batu yang dikisar dan gula melaka.</p>
-    
-    <p>Gambar-gambar diatas merupakan makanan tradisonal yang mnejadi kegemaran setiap kaum di Malaysia. Klik gambar bagi melihat dengan lebih jelas</p>
-    
-</body>
-</html>
+    </div>
+
+    <div class="row">
+        <div class="column side">
+
+        </div>
+        <div class="column middle">
+            <h1>Galeri Gambar Makanan</h1>
+            <div class="card">
+                <img src="image/makanan1.webp" alt="Nasi lemak" class="center">
+                <h3>Nasi Lemak</h3>
+                <p>Nasi Lemak merupakan hidangan makanan Melayu. Ia diperbuat dari beras yang dimasak dengan santan kelapa, bawang merah, halia dan juga daun pandan. Nasi Lemak juga dikenali sebagai juadah kebangsaan Malaysia dan boleh di setiap pelosok Malaysia.</p>
+            </div>
+            <div class="card">
+                <img src="image/makanan2.webp" alt="Asam laksa" class="center">
+                <h3>Asam Laksa</h3>
+                <p>Asam Laksa merupakan hidangan tradisi masyarakat Baba dan Nyonya. Hidangan ini merupakan mee beras yang disajikan bersama kuah ikan pedas. Keturunan Baba dan Nyonya ini pada asalnya merupakan imigran Cina yang datang ke Tanah Melayu. Mereka ini telah menggabungkan budaya Melayu yang diterapkan dalam kehidupan seharian.</p>
+            </div>
+            <div class="card">
+                <img src="image/makanan3.webp" alt="Roti canai" class="center">
+                <h3>Roti Canai</h3>
+                <p>Roti Canai merupakan roti leper yang diperkenalkan oleh masyarakat India. Ia boleh didapati di kebanyakan restoran mamak dan restoran Melayu di Malaysia.</p>
+            </div>
+            <div class="card">
+                <img src="image/makanan4.webp" alt="Cendol" class="center">
+                <h3>Cendol</h3>
+                <p>Cendol adalah pencuci mulut yang berasal dari Indonesia, namun begitu popular di Malaysia. Ia diperbuat dari santan kelapa, jeli hijau yang diperbuat daripada tepung beras serta berwarna hijau, ais batu yang dikisar dan gula melaka.</p>
+            </div>
+            <div class="card">
+                <p>Gambar-gambar diatas merupakan makanan tradisonal yang mnejadi kegemaran setiap kaum di Malaysia. Klik gambar bagi melihat dengan lebih jelas</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column side">
+    </div>
+
+</body></html>
