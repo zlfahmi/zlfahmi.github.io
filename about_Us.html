@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
     <style>
+        /* Table */
         td {
             text-align: center;
             height: 68px;
             border-style: solid;
-
         }
 
         th {
@@ -22,6 +23,11 @@
             border-collapse: collapse;
         }
 
+        /* Remove padding above header */
+        h3 {
+            margin-top: 0px;
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -32,12 +38,16 @@
             background: #f1f1f1;
         }
 
+        /* Navigation bar */
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #333;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
         }
 
         li {
@@ -96,7 +106,7 @@
         /* Add a card effect for articles */
         .card {
             background-color: white;
-            padding: 20px;
+            padding: 30px;
             margin-top: 15px;
         }
 
@@ -132,6 +142,7 @@
                 width: 100%;
             }
         }
+
     </style>
 </head>
 
@@ -147,7 +158,7 @@
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
-                
+
                 <h3>My Timetable</h3>
                 <table>
                     <tr>
@@ -165,17 +176,17 @@
                         <th>6:00 pm</th>
                     </tr>
                     <tr>
-                        <th>Sundays</th>
+                        <th>Sunday</th>
                         <td colspan="2"><b>CSC508</b><br>8:00am-9:50am</td>
-                        <td colspan="2"><b>CSC569</b><br>10:15am-12:05am</td>
-                        <td><b>CTU554</b><br>12:15pm-1:05am</td>
+                        <td colspan="2"><b>CSC569</b><br>10:15am-12:05pm</td>
+                        <td><b>CTU554</b><br>12:15pm-1:05pm</td>
                         <td colspan="6"></td>
                     </tr>
                     <tr>
-                        <th>Mondays</th>
+                        <th>Monday</th>
                         <td colspan="2"><b>CSC577</b><br>8:00am-9:50am</td>
-                        <td colspan="2"><b>CSC574</b><br>10:15am-12:05am</td>
-                        <td colspan="2"><b>CSC584</b><br>12:15am-2:05am</td>
+                        <td colspan="2"><b>CSC574</b><br>10:15am-12:05pm</td>
+                        <td colspan="2"><b>CSC584</b><br>12:15am-2:05pm</td>
                         <td colspan="5"></td>
                     </tr>
                     <tr>
@@ -184,7 +195,7 @@
                         <td colspan="2"></td>
                         <td colspan="2"><b>ELC650</b><br>12:15pm-2:05pm</td>
                         <td colspan="2"><b>CSC508</b><br>2:30pm-4:20pm</td>
-                        <td colspan="2"><b>CSC577</b><br>4:30pm-6:20pm</td>
+                        <td colspan="2"><b>CSC574</b><br>4:30pm-6:20pm</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -199,7 +210,7 @@
                         <td colspan="2"></td>
                         <td colspan="2"><b>TMC451</b><br>10:15am-12:05pm</td>
                         <td colspan="2"></td>
-                        <td colspan="2"><b>CSC584</b><br>2:30am-4:20am</td>
+                        <td colspan="2"><b>CSC584</b><br>2:30am-4:20pm</td>
                         <td colspan="3"></td>
                     </tr>
                 </table>
@@ -210,7 +221,7 @@
         </div>
         <div class="rightcolumn">
             <div class="card">
-               <h3>Expected Grades For This Semester</h3>
+                <h3>Expected Grades For This Semester</h3>
                 <table>
                     <tr>
                         <th>Course</th>
@@ -256,4 +267,6 @@
     <div class="footer">
         footer
     </div>
-</body></html>
+</body>
+
+</html>
