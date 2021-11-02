@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <title>My Homepage - Profile</title>
     <style>
+        th {
+            text-align: left;
+            vertical-align: top
+        }
+
+        td {
+            padding-bottom: 20px;
+        }
+
         * {
             box-sizing: border-box;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        .h1,
-        .h2,
-        .h3,
-        .h4,
-        .h5,
-        .h6 {
-            margin-top: 0;
+        /* Remove padding on top of header */
+        h1, h2 {
+            margin-top: 0px;
         }
 
         body {
@@ -49,7 +48,7 @@
             display: block;
             color: white;
             text-align: center;
-            padding: 10px 16px;
+            padding: 14px 16px;
             text-decoration: none;
         }
 
@@ -101,13 +100,13 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 30%;
+            width: 20%;
         }
 
         /* Add a card effect for articles */
         .card {
             background-color: white;
-            padding: 20px;
+            padding: 30px;
             margin-top: 20px;
         }
 
@@ -147,20 +146,49 @@
 </head>
 
 <body>
-    <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="photo_Gallery.html">Photo Gallery</a></li>
-        <li><a href="about_Us.html">About Us</a></li>
-    </ul>
-
+    <div class="topnav">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="photo_Gallery.html">Photo Gallery</a></li>
+            <li><a href="about_Us.html">About Us</a></li>
+        </ul>
+    </div>
     <div class="header">
-        <h1>Selamat Datang ke Homepage Saya</h1>
+        <h1>Welcome To My Homepage</h1>
     </div>
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
-                <h1 style="text-align: center">Profile</h1>
-                <img width="50px" height="auto" src="image/profile.jpeg" alt="profile" class="center">
+                <h2 style="text-align: center">My Profile</h2>
+                <img src="image/profile.jpeg" alt="profile" class="center">
+                <br><br>
+                <table width="100%">
+                   <tr>
+                       <th colspan="3"><h3 class="text-align: center" >Profile</h3></th>
+                       <th colspan="3"><h3 style="text-align: center">Academic Info</h3></th>
+                   </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>&nbsp; : &nbsp;</th>
+                        <td>ZulFahmi Akmal Bin Maliki</td>
+                        <th>Degree</th>
+                    </tr>
+                    <tr>
+                        <th>Home address</th>
+                        <th>&nbsp; : &nbsp;</th>
+                        <td>LOT 967, Kampung Kepulau, Palekbang, <br> 16040 Tumpat, <br>Kelantan.</td>
+                    </tr>
+                    <tr>
+                        <th>Phone number</th>
+                        <th>&nbsp; : &nbsp;</th>
+                        <td>014 - 5151435</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <th>&nbsp; : &nbsp;</th>
+                        <td>z.fahmi312@gmail.com</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="rightcolumn">
