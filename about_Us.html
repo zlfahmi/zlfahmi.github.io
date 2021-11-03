@@ -23,8 +23,23 @@
             border-collapse: collapse;
         }
 
+        /* table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+
+            width: 100%;
+        }  
+
+
+        .grade table{
+            border: 3px solid black;
+            height: 60px;
+            text-align: center;
+            padding: 8px;
+        } */
+
         /* Remove padding above header */
-        h3 {
+        h3, p {
             margin-top: 0px;
         }
 
@@ -45,7 +60,8 @@
             padding: 0;
             overflow: hidden;
             background-color: #333;
-            position: -webkit-sticky; /* Safari */
+            position: -webkit-sticky;
+            /* Safari */
             position: sticky;
             top: 0;
         }
@@ -109,6 +125,11 @@
             padding: 30px;
             margin-top: 15px;
         }
+        
+        .table {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
 
         /* Clear floats after the columns */
         .row:after {
@@ -142,7 +163,6 @@
                 width: 100%;
             }
         }
-
     </style>
 </head>
 
@@ -159,7 +179,7 @@
         <div class="leftcolumn">
             <div class="card">
 
-                <h3>My Timetable</h3>
+                <h3>Class Timetable</h3>
                 <table>
                     <tr>
                         <th style="height: 20px;"></th>
@@ -217,12 +237,13 @@
             </div>
             <div class="card">
                 <p>This is my current academic information regarding course timetable and my goals for this semester</p>
+                <br><br><br><br>
             </div>
         </div>
         <div class="rightcolumn">
             <div class="card">
                 <h3>Expected Grades For This Semester</h3>
-                <table>
+                <table class="grade">
                     <tr>
                         <th>Course</th>
                         <th>Grade</th>
@@ -265,8 +286,6 @@
     </div>
 
     <div class="footer">
-        footer
+        <a href="https://github.com/zlfahmi/zlfahmi.github.io">zulfahmi.github.io</a>
     </div>
-</body>
-
-</html>
+</body></html>
