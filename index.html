@@ -9,6 +9,12 @@
             text-align: left;
             vertical-align: top;
         }
+        
+        .th1 h2 {
+            text-align: center;
+            vertical-align: middle;
+            padding-bottom: 0px;
+        }
 
         td {
             padding-bottom: 20px;
@@ -20,7 +26,9 @@
         }
 
         /* Remove padding on top of header */
-        h1, h2, .h3 {
+        h1,
+        h2,
+        .h3 {
             margin-top: 0px;
         }
 
@@ -35,7 +43,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: #002842;
             position: -webkit-sticky;
             position: sticky;
             top: 0;
@@ -58,21 +66,22 @@
         }
 
         .active {
-            background-color: #048eaa;
+            background-color: #0e91ab;
         }
 
         /* Header/Blog Title */
         .header {
-
             text-align: center;
-            background: white;
+            background: white; 
+            background-image: url(image/header1.jpg);
+            background-size: cover;
         }
 
         .header h1 {
             font-size: 40px;
             padding-top: 30px;
             padding-bottom: 30px;
-
+            color: white;
         }
 
         /* Create two unequal columns that floats next to each other */
@@ -103,7 +112,7 @@
             margin-right: auto;
             width: 20%;
         }
-        
+
         .centerside {
             display: block;
             margin-left: auto;
@@ -139,8 +148,9 @@
         .footer {
             padding: 20px;
             text-align: center;
-            background: #ddd;
+            background: #002842;
             margin-top: 20px;
+            color: white;
         }
 
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -152,25 +162,15 @@
                 padding: 0;
             }
         }
-
-        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: none;
-                width: 100%;
-            }
-        }
     </style>
 </head>
 
 <body>
-    <div>
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="photo_Gallery.html">Photo Gallery</a></li>
-            <li><a href="about_Us.html">About Us</a></li>
-        </ul>
-    </div>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="photo_Gallery.html">Photo Gallery</a></li>
+        <li><a href="about_Us.html">About Us</a></li>
+    </ul>
     <div class="header">
         <h1>Welcome To My Homepage</h1>
     </div>
@@ -183,10 +183,10 @@
                 <table width="80%" class="centertable">
                     <tr>
                         <th colspan="3" width="50%">
-                            <h2 class="text-align: center">Profile</h2>
+                            <h2 style="text-align: center; background-color:#002491; color: white; height: 40px;">Personal Info</h2>
                         </th>
                         <th colspan="3">
-                            <h2 style="text-align: center">Academic Info</h2>
+                            <h2 style="text-align: center; background-color:#002491; color: white; height: 40px">Academic Info</h2>
                         </th>
                     </tr>
                     <tr>
@@ -196,9 +196,9 @@
                         <th>Degree</th>
                         <th>&nbsp; : &nbsp;</th>
                         <td>
-                            - Bachelor of Computer Science (Hons.) <br>
-                            - UiTM Cendering <br>
-                            - Enrolled in March 2020 <br>
+                            ▪ Bachelor of Computer Science (Hons.) <br>
+                            ▪ UiTM Kampus Cendering <br>
+                            ▪ Enrolled in March 2020 <br>
                         </td>
                     </tr>
                     <tr>
@@ -208,10 +208,10 @@
                         <th>Diploma</th>
                         <th>&nbsp; : &nbsp;</th>
                         <td>
-                            - Diploma of Computer Science <br>
-                            - UiTM Machang <br>
-                            - Enrolled in September 2018 <br>
-                            - CGPA : 3.90
+                            ▪ Diploma of Computer Science <br>
+                            ▪ UiTM Kampus Machang <br>
+                            ▪ Enrolled in September 2018 <br>
+                            ▪ CGPA : 3.90
                         </td>
                     </tr>
                     <tr>
@@ -221,10 +221,10 @@
                         <th rowspan="2">School</th>
                         <th rowspan="2">&nbsp; : &nbsp;</th>
                         <td rowspan="2">
-                            - SMK Kampung Laut <br>
-                            - Enrolled in January 2013 <br>
-                            - SPM : 7A 2B <br>
-                            - PT3 : 10A
+                            ▪ SMK Kampung Laut <br>
+                            ▪ Enrolled in January 2013 <br>
+                            ▪ SPM : 7A 2B <br>
+                            ▪ PT3 : 10A
                         </td>
                     </tr>
                     <tr>
@@ -234,7 +234,7 @@
                     </tr>
                     <tr>
                         <th colspan="3">
-                            <h2 style="text-align: center">Working Experience</h2>
+                            <h2 style="text-align: center; background-color:#002491; color: white; height: 40px;">Working Experience</h2>
                         </th>
                     </tr>
                     <tr>
@@ -242,15 +242,15 @@
                     </tr>
                     <tr>
                         <td colspan="3">Worked as an intern for two months to fulfil the requirement for Diploma in Computer Science. <br> <br>
-                        I was stationed at Unit Sistem dan Teknologi Maklumat (USTM) department that handled lecturer and student problems regarding student portal, hardware failure, software malfunction, and keying audit data into the system <br> <br>
-                        During intership, I was tasked to create a website system that is able to store, update, delete, and print out the information regarding IT assets in PKB</td>
+                            I was stationed at Unit Sistem dan Teknologi Maklumat (USTM) department that handled lecturer and student problems regarding student portal, hardware failure, software malfunction, and keying audit data into the system <br> <br>
+                            During intership, I was tasked to create a website system that is able to store, display, update, delete, and print out the information regarding IT assets in PKB</td>
                     </tr>
                 </table>
             </div>
         </div>
         <div class="rightcolumn">
             <div class="card">
-                <a href="photo_Gallery.html"><img class="centerside" src="image/image1.jpg" alt="go to photo gallery"></a>
+                <a href="photo_Gallery.html"><img class="centerside" src="image/food.png" alt="go to photo gallery"></a>
                 <h3>Food Gallery</h3>
                 <p>See the top 7 favourite foods among Malaysian</p>
                 <a href="photo_Gallery.html">Read more >></a>
@@ -262,16 +262,20 @@
                 <a href="about_Us.html">Read more >></a>
             </div>
             <div class="card">
-                <h3 class="h3">Link to external site</h3>
-                <a href="uitm.edu.my">UiTM Official Website</a><br>
-                <a href="istudent.uitm.edu.my">iStudent Portal</a><br>
-                <a href="ufuture.uitm.edu.my">UFUTURE Platform</a>
+                <h3 class="h3">Link to External Site</h3>
+                <p style="margin-bottom: 0px"><b>UiTM Official Website</b></p>
+                <a href="https://uitm.edu.my/index.php/en/" target="_blank">● Click here >></a><br>
+                <p style="margin-bottom: 0px"><b>iStudent Portal</b></p>
+                <a href="https://istudent.uitm.edu.my/index_isp.htm" target="_blank">● Click here >></a><br>
+                <p style="margin-bottom: 0px"><b>UFUTURE Platform</b></p>
+                <a href="https://ufuture.uitm.edu.my/home/" target="_blank">● Click here >></a>
             </div>
         </div>
     </div>
     <div class="footer">
-        <p>Link to my github repository</p>
-        <a href="https://github.com/zlfahmi/zlfahmi.github.io">zulfahmi.github.io</a>
+       <p><b>ZulFahmi - Lab Assignment 1 CSC574</b></p>
+        <p>The CSS codes are courtesy of <a style="color: white" href="https://www.w3schools.com/" target="_blank">W3Schools</a> with a few modifications to fit my personal preferences for this website</p>
+        <p><b>My github repository - </b><a style="color: white" href="https://github.com/zlfahmi/zlfahmi.github.io" target="_blank">zlfahmi.github.io</a></p>
     </div>
 
 </body></html>

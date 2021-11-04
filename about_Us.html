@@ -60,7 +60,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: #002842;
             position: -webkit-sticky;
             position: sticky;
             top: 0;
@@ -83,7 +83,7 @@
         }
 
         .active {
-            background-color: #048eaa;
+            background-color: #0e91ab;
         }
 
         /* Header/Blog Title */
@@ -142,8 +142,9 @@
         .footer {
             padding: 20px;
             text-align: center;
-            background: #ddd;
+            background: #002842;
             margin-top: 20px;
+            color: white;
         }
 
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -155,25 +156,15 @@
                 padding: 0;
             }
         }
-
-        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: none;
-                width: 100%;
-            }
-        }
     </style>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="photo_Gallery.html">Photo Gallery</a></li>
-            <li><a class="active" href="about_Us.html">About Us</a></li>
-        </ul>
-    </nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="photo_Gallery.html">Photo Gallery</a></li>
+        <li><a class="active" href="about_Us.html">About Us</a></li>
+    </ul>
     <h1>About Us</h1>
     <div class="row">
         <div class="leftcolumn">
@@ -236,8 +227,9 @@
                 </table>
             </div>
             <div class="card">
+                <p><b>Notes</b></p>
                 <p>This is my current academic information regarding course timetable and my goals for this semester</p>
-                <p>For this semester, I planned to study harder and stay focus in class so I can get a better understanding of every subjects. I also wanted to improve my study schedule by organizing my time correctly and stop delaying all my assignments so that I can finish them on time.</p>
+                <p>For this semester, I planned to study harder and stay focus in class to get a better understanding of every subjects. I also wanted to improve my study schedule by organizing my time correctly and stop delaying all my assignments so that I can finish them on time.</p>
 
             </div>
         </div>
@@ -287,7 +279,8 @@
     </div>
 
     <div class="footer">
-        <p>Link to my github repository</p>
-        <a href="https://github.com/zlfahmi/zlfahmi.github.io">zulfahmi.github.io</a>
+       <p><b>ZulFahmi - Lab Assignment 1 CSC574</b></p>
+        <p>The CSS codes are courtesy of <a style="color: white" href="https://www.w3schools.com/" target="_blank">W3Schools</a> with a few modifications to fit my personal preferences for this website</p>
+        <p><b>My github repository - </b><a style="color: white" href="https://github.com/zlfahmi/zlfahmi.github.io" target="_blank">zlfahmi.github.io</a></p>
     </div>
 </body></html>
