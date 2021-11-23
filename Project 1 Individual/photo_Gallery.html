@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #002842;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #0e91ab;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Create three unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        /* Left and right column */
+        .column.side {
+            width: 15%;
+        }
+
+        /* Middle column */
+        .column.middle {
+            width: 70%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column.side,
+            .column.middle {
+                width: 100%;
+            }
+        }
+
+        /* Image */
+        .img {
+            background-color: #aaa;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-top: 15px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #002842;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="photo_Gallery.html">Photo Gallery</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="column side">
+
+        </div>
+        <div class="column middle">
+            <h1>Malaysian Favourite Foods</h1>
+            <div class="card">
+                <img src="image/nasilemak.jpg" alt="Nasi lemak" class="center">
+                <h2>Nasi Lemak</h2>
+                <p>Nasi lemak is basically rice cooked in coconut milk. But it's the sides that matter.
+                    Depending on where you are in Malaysia, it comes with a variety of accompaniments such as hard-boiled egg, peanuts, vegetables, lamb/chicken/beef curry, seafood and sambal (chili-based sauce).
+                    Nasi lemak is traditionally eaten for breakfast but these days people are ordering it any time of day.</p>
+            </div>
+            <div class="card">
+                <img src="image/meegoreng.jpg" alt="Mee goreng mamak" class="center">
+                <h2>Mee Goreng</h2>
+                <p>This Indian Muslim dish is the complete package. Yellow noodles. Beef or chicken. Shrimp. Soy sauce, veggies and eggs. A bit of chili tossed in for an irresistible jolt. Sadly, you can try to replicate this one at home, but it's just not going to taste the way it did when you chowed down at that gritty Malaysian hawker stall.</p>
+            </div>
+            <div class="card">
+                <img src="image/apambalik.jpg" alt="Apam balik" class="center">
+                <h2>Apam Balik</h2>
+                <p>You haven't truly experienced Malaysian food until you thrill your taste buds with this sweet treat.
+                    A pancake-style snack wedded with the compact package of an omelet, apam balik is stuffed with more than a sufficient amount of sugar, peanuts and the occasional sprinkle of corn -- it's a dish that's constantly being reinvented.</p>
+            </div>
+            <div class="card">
+                <img src="image/rotijala.jpg" alt="Roti jala" class="center">
+                <h2>Roti Jala</h2>
+                <p>Roti jala, or net bread, gets its name from the net-like formation that's created by making zigzagging lines with flour on a large skillet.
+                    The final product is folded up like a crepe and usually served with chicken curry. Roti jala is eaten any time of the day.</p>
+            </div>
+            <div class="card">
+                <img src="image/ayampercik.jpg" alt="Ayam percik" class="center">
+                <h2>Ayam Percik</h2>
+                <p>KFC's popularity in the region (and across Asia) over other fast food chains won't surprise those familiar with ayam percik.
+                    Basically, it's barbecued chicken slathered in spicy chili, garlic and ginger sauce mixed with coconut milk. With the right amount of percik sauce, this staple Malaysian stall food packs more zing than anything the Colonel can muster.</p>
+            </div>
+            <div class="card">
+                <img src="image/nasikerabu.jpg" alt="Nasi kerabu" class="center">
+                <h2>Nasi Kerabu</h2>
+                <p>From the state of Kelantan in northern peninsular Malaysia, nasi kerabu gets its eye-grabbing color from telang flowers, which are crushed and mixed into flour.
+                    The aquamarine dish is topped with bean sprouts and fried coconut, then drenched in spicy budu, a fermented fish sauce. In true Kelantan style, you use your hands to dig into this one.</p>
+            </div>
+            <div class="card">
+                <img src="image/satay.jpg" alt="Satay" class="center">
+                <h2>Satay</h2>
+                <p>Though considered by many to be a dish native to Thailand, satay is actually believed to have originated in Indonesia. Origins aside, can we all just agree that meat on a stick is good?
+                    Malaysia has its own variations of the grilled skewers, served nationwide in chicken, beef or pork forms (the latter in non-Muslim venues only).
+                    Sauces vary from region to region, including the peanut sauce that's loved the world over.</p>
+            </div>
+            <div class="card">
+                <p>The images above shows the favourite dishes that are popular among Malaysian. The sum of many delicious parts, Malaysian cuisine's influences include Chinese, Indian and Malay. Every tourist who visit Malaysia should try atleast one of these foods to fully experience Malaysian cultures.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column side">
+    </div>
+    <div class="footer">
+       <p><b>ZulFahmi - Lab Assignment 1 CSC574</b></p>
+        <p>The CSS codes are courtesy of <a style="color: white" href="https://www.w3schools.com/" target="_blank">W3Schools</a> with a few modifications to fit my personal preferences for this website</p>
+        <p><b>My github repository - </b><a style="color: white" href="https://github.com/zlfahmi/zlfahmi.github.io" target="_blank">zlfahmi.github.io</a></p>
+    </div>
+
+</body></html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <style>
+        /* Table */
+        td {
+            text-align: center;
+            height: 68px;
+            border-style: solid;
+        }
+
+        th {
+            width: 8.3%;
+            border-style: solid;
+        }
+
+        table {
+            border-style: solid;
+            border-bottom-style: solid;
+            border-collapse: collapse;
+        }
+
+        /* table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+
+            width: 100%;
+        }  
+
+
+        .grade table{
+            border: 3px solid black;
+            height: 60px;
+            text-align: center;
+            padding: 8px;
+        } */
+
+        /* Remove padding above header */
+        h3,
+        p {
+            margin-top: 0px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* Navigation bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #002842;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #0e91ab;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Image */
+        .img {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 30px;
+            margin-top: 15px;
+        }
+
+        .table {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #002842;
+            margin-top: 20px;
+            color: white;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="photo_Gallery.html">Photo Gallery</a></li>
+        <li><a class="active" href="about_us.html">About Us</a></li>
+    </ul>
+    <h1>About Us</h1>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+
+                <h3>Class Timetable</h3>
+                <table>
+                    <tr>
+                        <th style="height: 20px;"></th>
+                        <th>8:00 am</th>
+                        <th>9:00 am</th>
+                        <th>10:00 am</th>
+                        <th>11:00 am</th>
+                        <th>12:00 pm</th>
+                        <th>1:00 pm</th>
+                        <th>2:00 pm</th>
+                        <th>3:00 pm</th>
+                        <th>4:00 pm</th>
+                        <th>5:00 pm</th>
+                        <th>6:00 pm</th>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <td colspan="2"><b>CSC508</b><br>8:00am-9:50am</td>
+                        <td colspan="2"><b>CSC569</b><br>10:15am-12:05pm</td>
+                        <td><b>CTU554</b><br>12:15pm-1:05pm</td>
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <td colspan="2"><b>CSC577</b><br>8:00am-9:50am</td>
+                        <td colspan="2"><b>CSC574</b><br>10:15am-12:05pm</td>
+                        <td colspan="2"><b>CSC584</b><br>12:15am-2:05pm</td>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td colspan="2"><b>CSC569</b><br>8:00am-9:50am</td>
+                        <td colspan="2"></td>
+                        <td colspan="2"><b>ELC650</b><br>12:15pm-2:05pm</td>
+                        <td colspan="2"><b>CSC508</b><br>2:30pm-4:20pm</td>
+                        <td colspan="2"><b>CSC574</b><br>4:30pm-6:20pm</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td colspan="2"></td>
+                        <td colspan="2"><b>CSC577</b><br>10:15am-12:05pm</td>
+                        <td><b>CTU554</b><br>12:15pm-1:05pm</td>
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td colspan="2"></td>
+                        <td colspan="2"><b>TMC451</b><br>10:15am-12:05pm</td>
+                        <td colspan="2"></td>
+                        <td colspan="2"><b>CSC584</b><br>2:30am-4:20pm</td>
+                        <td colspan="3"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card">
+                <p><b>Notes</b></p>
+                <p>This is my current academic information regarding course timetable and my goals for this semester</p>
+                <p>For this semester, I planned to study harder and stay focus in class to get a better understanding of every subjects. I also wanted to improve my study schedule by organizing my time correctly and stop delaying all my assignments so that I can finish them on time.</p>
+
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>Expected Grades For This Semester</h3>
+                <table class="grade">
+                    <tr>
+                        <th>Course</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td style="height: 10px">CSC508</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>CSC569</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>CSC574</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>CSC577</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>CSC584</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>CTU554</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>ELC650</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>TMC451</td>
+                        <td>A</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+       <p><b>ZulFahmi - Lab Assignment 1 CSC574</b></p>
+        <p>The CSS codes are courtesy of <a style="color: white" href="https://www.w3schools.com/" target="_blank">W3Schools</a> with a few modifications to fit my personal preferences for this website</p>
+        <p><b>My github repository - </b><a style="color: white" href="https://github.com/zlfahmi/zlfahmi.github.io" target="_blank">zlfahmi.github.io</a></p>
+    </div>
+</body></html>
