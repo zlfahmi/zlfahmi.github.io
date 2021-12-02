@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Comment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="photo_Gallery.html">Photo Gallery</a></li>
-            <li><a href="about_Us.html">About Us</a></li>
-            <li><a href="comment.html">Comment</a></li>
-        </ul>
-    </nav>
-    
-    <h3>Borang Komen</h3>
-    
-    <form action="comment.html">
-        <input type="text" name="Nama" value="Nama Anda"><br>
-        <input type="radio" name="gender" value="lelaki" checked>Lelaki<br>
-        <input type="radio" name="gender" value="perempuan" checked>Perempuan<br>
-        <input type="text" name="Emel" value="Emel Anda"><br>
-        <textarea name="Komen" id="" cols="30" rows="10">Masukkan komen anda disini</textarea><br>
-        <input type="submit" value="Hantar">
-    </form>
-</body>
-</html>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="photo_Gallery.html">Photo Gallery</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a class="active" href="comment.html">Feedback</a></li>
+    </ul>
+    <br>
+    <h1>Feedback Form</h1>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+
+                <form class="center" action="comment.html">
+                   <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name"><br><br>
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" id="gender" name="gender" value="lelaki" checked>Lelaki<br>
+                    <input type="radio" id="gender" name="gender" value="perempuan" checked>Perempuan<br>
+                    <input type="text" name="Emel" value="Emel Anda"><br>
+                    <textarea name="Komen" id="" cols="30" rows="10">Masukkan komen anda disini</textarea><br>
+                    <input type="submit" value="Hantar">
+                </form>
+            </div>
+        </div>
+    </div>
+</body></html>
