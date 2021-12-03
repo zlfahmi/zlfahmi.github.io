@@ -6,7 +6,19 @@
     <title>About Us</title>
     <style>
         /* Table */
-        td {
+        .timetable,
+        table {
+            border-style: solid;
+            border-bottom-style: solid;
+            border-collapse: collapse;
+        }
+
+        .timetable th {
+            width: 8.3%;
+            border-style: solid;
+        }
+
+        .timetable td {
             text-align: center;
             height: 68px;
             border-style: solid;
@@ -17,106 +29,10 @@
             border-style: solid;
         }
 
-        table {
+        td {
+            text-align: center;
+            height: 68px;
             border-style: solid;
-            border-bottom-style: solid;
-            border-collapse: collapse;
-        }
-
-        /* table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-
-            width: 100%;
-        }  
-
-
-        .grade table{
-            border: 3px solid black;
-            height: 60px;
-            text-align: center;
-            padding: 8px;
-        } */
-
-        /* Remove padding above header */
-        h3,
-        p {
-            margin-top: 0px;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 10px;
-            background: #f1f1f1;
-        }
-
-        /* Navigation bar */
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #002842;
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #0e91ab;
-        }
-
-        /* Header/Blog Title */
-        .header {
-            padding: 30px;
-            text-align: center;
-            background: white;
-        }
-
-        .header h1 {
-            font-size: 50px;
-        }
-
-        /* Create two unequal columns that floats next to each other */
-        /* Left column */
-        .leftcolumn {
-            float: left;
-            width: 75%;
-        }
-
-        /* Right column */
-        .rightcolumn {
-            float: left;
-            width: 25%;
-            background-color: #f1f1f1;
-            padding-left: 20px;
-        }
-
-        /* Image */
-        .img {
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
         }
 
         /* Add a card effect for articles */
@@ -125,43 +41,14 @@
             padding: 30px;
             margin-top: 15px;
         }
-
-        .table {
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Footer */
-        .footer {
-            padding: 20px;
-            text-align: center;
-            background: #002842;
-            margin-top: 20px;
-            color: white;
-        }
-
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 800px) {
-
-            .leftcolumn,
-            .rightcolumn {
-                width: 100%;
-                padding: 0;
-            }
-        }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
         <li><a href="photo_Gallery.html">Photo Gallery</a></li>
         <li><a class="active" href="about_us.html">About Us</a></li>
         <li><a href="comment.html">Feedback</a></li>
@@ -172,7 +59,7 @@
             <div class="card">
 
                 <h3>Class Timetable</h3>
-                <table>
+                <table class="timetable">
                     <tr>
                         <th style="height: 20px;"></th>
                         <th>8:00 am</th>
@@ -280,7 +167,7 @@
     </div>
 
     <div class="footer">
-       <p><b>ZulFahmi - Project 1 Individual CSC574</b></p>
+        <p><b>ZulFahmi - Project 1 Individual CSC574</b></p>
         <p>The CSS codes are courtesy of <a style="color: white" href="https://www.w3schools.com/" target="_blank">W3Schools</a> with a few modifications to fit my personal preferences for this website</p>
         <p><b>My github repository - </b><a style="color: white" href="https://github.com/zlfahmi/zlfahmi.github.io" target="_blank">zlfahmi.github.io</a></p>
     </div>
