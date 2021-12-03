@@ -24,6 +24,37 @@
     vertical-align: top
 }
 
+/* Table */
+        .timetable,
+        table {
+            border-style: solid;
+            border-bottom-style: solid;
+            border-collapse: collapse;
+        }
+
+        .timetable th {
+            width: 8.3%;
+            border-style: solid;
+        }
+
+        .timetable td {
+            text-align: center;
+            height: 68px;
+            border-style: solid;
+        }
+
+        th {
+            width: 8.3%;
+            border-style: solid;
+        }
+
+        td {
+            text-align: center;
+            height: 68px;
+            border-style: solid;
+        }
+
+
 /* Remove padding on top of header */
 .notoppadding {
     margin-top: 0px;
