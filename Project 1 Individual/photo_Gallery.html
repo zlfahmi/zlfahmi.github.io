@@ -4,59 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 10px;
-            background: #f1f1f1;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #002842;
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #0e91ab;
-        }
-
-        /* Header/Blog Title */
-        .header {
-            padding: 30px;
-            text-align: center;
-            background: white;
-        }
-
-        .header h1 {
-            font-size: 50px;
-        }
-
         /* Create three unequal columns that floats next to each other */
         .column {
             float: left;
@@ -96,12 +45,6 @@
             padding: 10px;
         }
 
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
 
         /* Add a card effect for articles */
         .card {
@@ -110,22 +53,6 @@
             padding-left: 50px;
             padding-right: 50px;
             margin-top: 15px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Footer */
-        .footer {
-            padding: 20px;
-            text-align: center;
-            background: #002842;
-            margin-top: 20px;
-            color: white;
         }
     </style>
 </head>
@@ -141,7 +68,6 @@
 
     <div class="row">
         <div class="column side">
-
         </div>
         <div class="column middle">
             <h1>Malaysian Favourite Foods</h1>
