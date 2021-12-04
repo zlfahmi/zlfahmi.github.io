@@ -5,56 +5,6 @@
     <meta charset="UTF-8">
     <title>Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Create three unequal columns that floats next to each other */
-        .column {
-            float: left;
-            padding: 10px;
-        }
-
-        /* Left and right column */
-        .column.side {
-            width: 15%;
-        }
-
-        /* Middle column */
-        .column.middle {
-            width: 70%;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-
-            .column.side,
-            .column.middle {
-                width: 100%;
-            }
-        }
-
-        /* Image */
-        .img {
-            background-color: #aaa;
-            width: 100%;
-            padding: 10px;
-        }
-
-
-        /* Add a card effect for articles */
-        .card {
-            background-color: white;
-            padding: 30px;
-            padding-left: 50px;
-            padding-right: 50px;
-            margin-top: 15px;
-        }
-    </style>
 </head>
 
 <body>
@@ -65,12 +15,9 @@
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="comment.html">Feedback</a></li>
     </ul>
-
+    <h1>Malaysian Favourite Foods</h1>
     <div class="row">
-        <div class="column side">
-        </div>
-        <div class="column middle">
-            <h1>Malaysian Favourite Foods</h1>
+        <div class="leftcolumn">
             <div class="card">
                 <img src="image/nasilemak.jpg" alt="Nasi lemak" class="center">
                 <h2>Nasi Lemak</h2>
@@ -120,10 +67,10 @@
         </div>
     </div>
 
-    <div class="column side">
+    <div class="rightcolumn">
     </div>
     <div class="footer">
-       <p><b>ZulFahmi - Project 1 Individual CSC574</b></p>
+        <p><b>ZulFahmi - Project 1 Individual CSC574</b></p>
         <p>The CSS codes are courtesy of <a style="color: white" href="https://www.w3schools.com/" target="_blank">W3Schools</a> with a few modifications to fit my personal preferences for this website</p>
         <p><b>My github repository - </b><a style="color: white" href="https://github.com/zlfahmi/zlfahmi.github.io" target="_blank">zlfahmi.github.io</a></p>
     </div>
