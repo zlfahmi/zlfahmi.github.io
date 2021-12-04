@@ -142,6 +142,10 @@ li a:hover:not(.active) {
     width: 50%;
 }
 
+.centertext {
+    text-align: center
+}
+
 .profilecenter {
     display: block;
     margin-left: auto;
