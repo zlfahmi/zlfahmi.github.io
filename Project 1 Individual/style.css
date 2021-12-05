@@ -18,6 +18,10 @@
     padding-left: 20px;
 }
 
+#th h1 {
+    margin-bottom: 0px;
+}
+
 .profiletable h2 {
     text-align: center;
     background-color: #002491;
