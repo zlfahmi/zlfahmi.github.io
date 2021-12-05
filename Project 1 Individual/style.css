@@ -12,6 +12,12 @@
     vertical-align: top;
 }
 
+.profiletable #th {
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
 .profiletable h2 {
     text-align: center;
     background-color: #002491;
@@ -128,6 +134,11 @@ li a:hover:not(.active) {
     padding-left: 20px;
 }
 
+.columnleft {
+    float: left;
+    width: 50%;
+}
+
 /* Image */
 .img {
     background-color: #aaa;
@@ -143,14 +154,14 @@ li a:hover:not(.active) {
 }
 
 .centertext {
-    text-align: center
+    text-align: left;
 }
 
 .profilecenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 50%;
 }
 
 .centerside {
