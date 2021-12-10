@@ -38,5 +38,7 @@ function validate() {
 
 function decreaseVolume() {
     var audio = document.getElementById("audio1");
-    audio.volume = 0.2;
+    var vol = audio;
+    vol = audio - 0.1;
+    audio.volume = vol;
 }
