@@ -1,48 +1,97 @@
-function validateForm() {
-  var name = document.forms["feedback"]["name"].value;
-  if (name == "") {
-    alert("Please fill in the name field");
-    return false;
-  }
-  var gender = document.forms["feedback"]["gender"].value;
-  if (gender == "") {
-    alert("Gender must be ticked");
-    return false;
-  }
-  var subject = document.forms["feedback"]["subject"].value;
-  if (subject == "") {
-    alert("Please fill in the subject field");
-    return false;
-  }
-  var email = document.forms["feedback"]["email"].value;
-  if (email == "") {
-    alert("Please fill in the email field");
-    return false;
-  }
-  var message = document.forms["feedback"]["message"].value;
-  if (message == "") {
-    alert("Please fill in the message field");
-    return false;
-  }
+function popup() {
+    alert("Welcome to my website!");
 }
 
-// Get the modal
-var modal = document.getElementById("myModal");
+function validate() {
+    var missingFields = false;
+    var strFields = "";
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+    if (feedback.name.value == '') {
+        missingFields = true;
+        strFields += "     Please fill in your name\n";
+
+    }
+    if (feedback.gender.value == '') {
+        missingFields = true;
+        strFields += "     Please tick the gender\n";
+    }
+    if (feedback.subject.value == '') {
+        missingFields = true;
+        strFields += "     Please fill in the subject\n";
+    }
+    if (feedback.email.value == '') {
+        missingFields = true;
+        strFields += "     Please fill in your email\n";
+    }
+    if (feedback.message.value == '') {
+        missingFields = true;
+        strFields += "     Please fill in the message\n";
+    }
+    
+    if (missingFields) {
+        alert("You must provide the following information before continuing:\n" + strFields);
+        return false;
+    }
+    alert("Your feedback has been recorded. Thank you!");
+    return true;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+function validate2() {
+    var divs = new Array();
+    divs[0] = "errFirst";
+    divs[1] = "errLast";
+    divs[2] = "errEmail";
+    divs[3] = "errUid";
+    divs[4] = "errPassword";
+    divs[5] = "errConfirm";
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+    function validate() {
+        var inputs = new Array();
+        inputs[0] = document.getElementById('name').value;
+        inputs[1] = document.getElementById('gender').value;
+        inputs[2] = document.getElementById('email').value;
+        inputs[3] = document.getElementById('subject').value;
+        inputs[4] = document.getElementById('message').value;
+
+        var errors = new Array();
+        errors[0] = "<span style='color:red'>Please enter your name!</span>";
+        errors[1] = "<span style='color:red'>Please tick your gender!</span>";
+        errors[2] = "<span style='color:red'>Please enter your email!</span>";
+        errors[3] = "<span style='color:red'>Please enter your subject!</span>";
+        errors[4] = "<span style='color:red'>Please enter your message!</span>";
+
+        for (i in inputs) {
+            var errMessage = errors[i];
+            var div = divs[i];
+            if (inputs[i] == "")
+                document.getElementById(div).innerHTML = errMessage;
+            else if (i == 2) {
+                var atpos = inputs[i].indexOf("@");
+                var dotpos = inputs[i].lastIndexOf(".");
+                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= inputs[i].length)
+                    document.getElementById('errEmail').innerHTML = "<span style='color: red'>Enter a valid email address!</span>";
+                else
+                    document.getElementById(div).innerHTML = "OK!";
+            } else if (i == 5) {
+                var first = document.getElementById('password').value;
+                var second = document.getElementById('confirm').value;
+                if (second != first)
+                    document.getElementById('errConfirm').innerHTML = "<span style='color: red'>Your passwords don't match!</span>";
+                else
+                    document.getElementById(div).innerHTML = "OK!";
+            } else
+                document.getElementById(div).innerHTML = "OK!";
+        }
+    }
+
+    function finalValidate() {
+        var count = 0;
+        for (i = 0; i < 6; i++) {
+            var div = divs[i];
+            if (document.getElementById(div).innerHTML == "OK!")
+                count = count + 1;
+        }
+        if (count == 6)
+            document.getElementById("errFinal").innerHTML = "All the data you entered is correct!!!";
+    }
 }

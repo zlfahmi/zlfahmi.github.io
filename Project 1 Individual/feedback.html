@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -38,7 +37,7 @@
                     <h2>Feedback form</h2>
                     <p style="font-size: 20px;">If you have any inquiries, feel free to send me a feedback. I greatly appreciate your opinion!</p>
                 </div>
-                <form method="post" name="feedback" onsubmit="return validateForm()" action="action.php">
+                <form name="feedback" onsubmit="return validate()">
                     <div class="mb-3"><label class="form-label" for="name">Your Name</label><input class="form-control item" type="text" id="name" name="name" placeholder="Enter name"></div>
                     <div style="margin-bottom: 16px;"><label class="form-label">Gender</label>
                         <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1" name="gender" value="Male"><label class="form-check-label">Male</label></div>
