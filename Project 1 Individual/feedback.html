@@ -38,7 +38,7 @@
                     <h2>Feedback form</h2>
                     <p style="font-size: 20px;">If you have any inquiries, feel free to send me a feedback. I greatly appreciate your opinion!</p>
                 </div>
-                <form name="feedback" onsubmit="return validateForm()" data-bss-recipient="39d4a48cc4fdce45e8778bde01d93203" data-bss-redirect-url="feedback.html">
+                <form method="post" name="feedback" onsubmit="return validateForm()" action="action.php">
                     <div class="mb-3"><label class="form-label" for="name">Your Name</label><input class="form-control item" type="text" id="name" name="name" placeholder="Enter name"></div>
                     <div style="margin-bottom: 16px;"><label class="form-label">Gender</label>
                         <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1" name="gender" value="Male"><label class="form-check-label">Male</label></div>
@@ -64,7 +64,6 @@
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/bootstrap.js"></script>
