@@ -47,5 +47,5 @@ function setVolumeFull() {
     var audio1 = document.getElementById("audio1");
     var audio2 = document.getElementById("audio2");
     audio1.volume = 1.0;
-    audio2.volume = 0.2;
+    audio2.volume = 1.0;
 }
