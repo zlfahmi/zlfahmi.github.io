@@ -37,6 +37,13 @@ function validate() {
 }
 
 function setVolume2() {
-    var audio = document.getElementById("audio1");
+    var audio1 = document.getElementById("audio1");
+    var audio2 = document.getElementById("audio2");
     audio.volume = 0.2;
+}
+
+function setVolumeFull() {
+    var audio1 = document.getElementById("audio1");
+    var audio2 = document.getElementById("audio2");
+    audio.volume = 1.0;
 }
