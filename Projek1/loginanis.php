@@ -13,7 +13,6 @@
 
         $result = mysqli_query($link,$sql);
         if (!$result)
-           // die("Database access failed: ".mysqli_error($link));
            die("Database access failed: " . mysqli_error);
 
         /*if (!$result) {
