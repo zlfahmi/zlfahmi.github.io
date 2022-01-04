@@ -41,25 +41,29 @@
         <link rel ="stylesheet" href="css/boostrap.css">
         <style type="text/css">
             body {
-                font-size: 14px;
-                font-family: sans-serif;
+                font: 14px sans-serif;
             }
-            .warpper {
-                width: 35px;
-                padding: 20px;
+            .wrapper {
+                width: 35@px;
+                padding: 2@px;
             }
         </style>
     </head>
     <body>
-
+    <?php $confirm_password=""; $confirm_password_err=""; $username_err="";
+        $password_err=""; $username=""; ?>
         <div class="wrapper">
             <h2>Login Page</h2>
             <p>Please fill this form to login an account</p>
             <form action="<?php echo htmlspecialchars($_SERVER["php_self"]);?>" method="POST">
+               <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?> ">
                 <label>Username</label>
                 <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                </div>
+                <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?> ">
                 <label>Password</label>
                 <input type="text" name="password" class="form-control" value="<?php echo $password; ?>">
+                </div>
                 <br><br>
                 <div class="form-group">
                     <input type="submit"class="btn btn-primary" value="Submit">
