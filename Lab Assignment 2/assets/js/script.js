@@ -1,7 +1,3 @@
-function popup() {
-    alert("Welcome to my website!");
-}
-
 function validate() {
     var missingFields = false;
     var strFields = "";
